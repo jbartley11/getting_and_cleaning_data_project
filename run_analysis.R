@@ -1,5 +1,8 @@
 # description
 
+# load dplyr
+library(dplyr)
+
 # set working directory
 setwd("Development/courses/coursera_get_clean_data/getting_and_cleaning_data_project")
 
@@ -36,7 +39,6 @@ rm(x_train, y_train, subject_train,
           x_test, y_test, subject_test,
           x, y, subject, features)
 
-
 # 2. Extract only the mean and standard deviation measurements
 
 # use regex to find mean and std measurements, keep labels and subject too
@@ -44,7 +46,6 @@ keep_columns <- grepl("mean|std|Activity|Subject", names(data))
 
 # use logical vector to return only the columns needed
 data <- data[, keep_columns]
-
 
 # 3. Use descriptive activity names to name the activities in the data set
 
@@ -74,3 +75,15 @@ column_names <- gsub("[()-]", "", column_names)
 
 # set column names
 names(data) <- column_names
+
+
+# 5. Create a second, independent tidy data set with the average
+#    of each variable for each activity and each subject
+
+# use dplyr to group and summarize
+data_summarized <- data %>% 
+  group_by(Subject, Activity) %>%
+  summarise_all(funs(mean))
+
+# export
+write.table(data_summarized, "tidy_data.txt")
