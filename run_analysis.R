@@ -24,9 +24,9 @@ y <- rbind(y_train, y_test)
 subject <- rbind(subject_train, subject_test)
 
 # name columns
-names(y) <- c("label")
+names(y) <- c("Activity")
 names(x) <- features$V2
-names(subject) <- c("subject")
+names(subject) <- c("Subject")
 
 # bind columns to form one dataset
 data <- cbind(subject, x, y)
@@ -34,13 +34,13 @@ data <- cbind(subject, x, y)
 # clear out unnecessary variables
 rm(x_train, y_train, subject_train,
           x_test, y_test, subject_test,
-          x, y, subject)
+          x, y, subject, features)
 
 
 # 2. Extract only the mean and standard deviation measurements
 
 # use regex to find mean and std measurements, keep labels and subject too
-keep_columns <- grepl("mean|std|label|subject", names(data))
+keep_columns <- grepl("mean|std|Activity|Subject", names(data))
 
 # use logical vector to return only the columns needed
 data <- data[, keep_columns]
@@ -50,6 +50,27 @@ data <- data[, keep_columns]
 
 # read activities
 activities <- read.table( "./UCI HAR Dataset/activity_labels.txt")
-names(activities) <- c("label", "activity")
 
-data$label <- factor(data$label, activities$label, activities$activity)
+# set column names for activities
+names(activities) <- c("Label", "Activity")
+
+# set label column as factor
+data$Activity <- factor(data$Activity, activities$Label, activities$Activity)
+
+# 4. Appropriately label the data set with descriptive variable names
+
+# get column names
+column_names <- names(data)
+
+# clean up column text
+column_names <- gsub("^t", "Time", column_names)
+column_names <- gsub("^f", "Frequency", column_names)
+column_names <- gsub("mean", "Mean", column_names)
+column_names <- gsub("std", "Std", column_names)
+column_names <- gsub("BodyBody", "Body", column_names)
+
+# remove dash and parentheses
+column_names <- gsub("[()-]", "", column_names)
+
+# set column names
+names(data) <- column_names
