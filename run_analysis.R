@@ -87,4 +87,4 @@ data_summarized <- data %>%
   summarise_all(funs(mean))
 
 # export
-write.table(data_summarized, "tidy_data.txt")
+write.table(data_summarized, "tidy_data.txt", row.name=FALSE)
