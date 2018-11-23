@@ -28,64 +28,64 @@ tidy_data.txt contains the average of mean and standard deviation measurements g
 - TimeBodyAccJerkStdX: Standard deviation of time of acceleration jerk in direction of X
 - TimeBodyAccJerkStdY: Standard deviation of time of acceleration jerk in direction of Y
 - TimeBodyAccJerkStdZ: Standard deviation of time of acceleration jerk in direction of Z
-- TimeBodyGyroMeanX
-- TimeBodyGyroMeanY
-- TimeBodyGyroMeanZ
-- TimeBodyGyroStdX
-- TimeBodyGyroStdY
-- TimeBodyGyroStdZ
-- TimeBodyGyroJerkMeanX
-- TimeBodyGyroJerkMeanY
-- TimeBodyGyroJerkMeanZ
-- TimeBodyGyroJerkStdX
-- TimeBodyGyroJerkStdY
-- TimeBodyGyroJerkStdZ
-- TimeBodyAccMagMean
-- TimeBodyAccMagStd
-- TimeGravityAccMagMean
-- TimeGravityAccMagStd
-- TimeBodyAccJerkMagMean
-- TimeBodyAccJerkMagStd
-- TimeBodyGyroMagMean
-- TimeBodyGyroMagStd
-- TimeBodyGyroJerkMagMean
-- TimeBodyGyroJerkMagStd
-- FrequencyBodyAccMeanX
-- FrequencyBodyAccMeanY
-- FrequencyBodyAccMeanZ
-- FrequencyBodyAccStdX
-- FrequencyBodyAccStdY
-- FrequencyBodyAccStdZ
-- FrequencyBodyAccMeanFreqX
-- FrequencyBodyAccMeanFreqY
-- FrequencyBodyAccMeanFreqZ
-- FrequencyBodyAccJerkMeanX
-- FrequencyBodyAccJerkMeanY
-- FrequencyBodyAccJerkMeanZ
-- FrequencyBodyAccJerkStdX
-- FrequencyBodyAccJerkStdY
-- FrequencyBodyAccJerkStdZ
-- FrequencyBodyAccJerkMeanFreqX
-- FrequencyBodyAccJerkMeanFreqY
-- FrequencyBodyAccJerkMeanFreqZ
-- FrequencyBodyGyroMeanX
-- FrequencyBodyGyroMeanY
-- FrequencyBodyGyroMeanZ
-- FrequencyBodyGyroStdX
-- FrequencyBodyGyroStdY
-- FrequencyBodyGyroStdZ
-- FrequencyBodyGyroMeanFreqX
-- FrequencyBodyGyroMeanFreqY
-- FrequencyBodyGyroMeanFreqZ
-- FrequencyBodyAccMagMean
-- FrequencyBodyAccMagStd
-- FrequencyBodyAccMagMeanFreq
-- FrequencyBodyAccJerkMagMean
-- FrequencyBodyAccJerkMagStd
-- FrequencyBodyAccJerkMagMeanFreq
-- FrequencyBodyGyroMagMean
-- FrequencyBodyGyroMagStd
-- FrequencyBodyGyroMagMeanFreq
-- FrequencyBodyGyroJerkMagMean
-- FrequencyBodyGyroJerkMagStd
-- FrequencyBodyGyroJerkMagMeanFreq
+- TimeBodyGyroMeanX: Mean of time of gyroscope movement in direction of X
+- TimeBodyGyroMeanY: Mean of time of gyroscope movement in direction of Y
+- TimeBodyGyroMeanZ: Mean of time of gyroscope movement in direction of Z
+- TimeBodyGyroStdX: Standard deviation of time of gyroscope movement in direction of X
+- TimeBodyGyroStdY: Standard deviation of time of gyroscope movement in direction of Y
+- TimeBodyGyroStdZ: Standard deviation of time of gyroscope movement in direction of Z
+- TimeBodyGyroJerkMeanX: Mean of time of gyroscope jerk in direction of X
+- TimeBodyGyroJerkMeanY: Mean of time of gyroscope jerk in direction of Y
+- TimeBodyGyroJerkMeanZ: Mean of time of gyroscope jerk in direction of Z
+- TimeBodyGyroJerkStdX: Standard deviation of time of gyroscope jerk in direction of X
+- TimeBodyGyroJerkStdY: Standard deviation of time of gyroscope jerk in direction of Y
+- TimeBodyGyroJerkStdZ: Standard deviation of time of gyroscope jerk in direction of Z
+- TimeBodyAccMagMean: Mean time of acceleration magnitude
+- TimeBodyAccMagStd: Standard deviation time of acceleration magnitude
+- TimeGravityAccMagMean: Mean time of gravity acceleration magnitude
+- TimeGravityAccMagStd: Standard deviation time of gravity acceleration magnitude
+- TimeBodyAccJerkMagMean: Mean time of acceleration jerk magnitude 
+- TimeBodyAccJerkMagStd: Standard deviation time of acceleration jerk magnitude 
+- TimeBodyGyroMagMean: Mean of gyroscopic magnitude
+- TimeBodyGyroMagStd: Standard deviation of gyroscopic magnitude
+- TimeBodyGyroJerkMagMean: Mean of gyroscopic jerk magnitude
+- TimeBodyGyroJerkMagStd: Standard deviation of gyroscopic jerk magnitude
+- FrequencyBodyAccMeanX: Mean of frequency body acceleration in direction of X
+- FrequencyBodyAccMeanY: Mean of frequency body acceleration in direction of Y
+- FrequencyBodyAccMeanZ: Mean of frequency body acceleration in direction of Z
+- FrequencyBodyAccStdX: Standard deviation of frequency body acceleration in direction of X
+- FrequencyBodyAccStdY: Standard deviation of frequency body acceleration in direction of Y
+- FrequencyBodyAccStdZ: Standard deviation of frequency body acceleration in direction of Z
+- FrequencyBodyAccMeanFreqX: Mean of frequency acceleration in direction of X
+- FrequencyBodyAccMeanFreqY: Mean of frequency acceleration in direction of Y
+- FrequencyBodyAccMeanFreqZ: Mean of frequency acceleration in direction of Z
+- FrequencyBodyAccJerkMeanX: Mean of frequency acceleration jerk in direction of X
+- FrequencyBodyAccJerkMeanY: Mean of frequency acceleration jerk in direction of Y
+- FrequencyBodyAccJerkMeanZ: Mean of frequency acceleration jerk in direction of Z
+- FrequencyBodyAccJerkStdX: Standard deviation of requency acceleration jerk in direction of X
+- FrequencyBodyAccJerkStdY: Standard deviation of requency acceleration jerk in direction of Y
+- FrequencyBodyAccJerkStdZ: Standard deviation of frequency acceleration jerk in direction of Z
+- FrequencyBodyAccJerkMeanFreqX: Mean of frequency acceleration jerk frequencies in direction of X
+- FrequencyBodyAccJerkMeanFreqY: Mean of frequency acceleration jerk frequencies in direction of Y
+- FrequencyBodyAccJerkMeanFreqZ: Mean of frequency acceleration jerk frequencies in direction of Z
+- FrequencyBodyGyroMeanX: Mean of body gyroscopic frequency in direction of X
+- FrequencyBodyGyroMeanY: Mean of body gyroscopic frequency in direction of Y
+- FrequencyBodyGyroMeanZ: Mean of body gyroscopic frequency in direction of Z
+- FrequencyBodyGyroStdX: Standard deviation of body gyroscopic frequency in direction of X
+- FrequencyBodyGyroStdY: Standard deviation of body gyroscopic frequency in direction of Y
+- FrequencyBodyGyroStdZ: Standard deviation of body gyroscopic frequency in direction of Z
+- FrequencyBodyGyroMeanFreqX: Mean of frequencies used for gyroscopic frequency in direction of X
+- FrequencyBodyGyroMeanFreqY: Mean of frequencies used for gyroscopic frequency in direction of Y
+- FrequencyBodyGyroMeanFreqZ: Mean of frequencies used for gyroscopic frequency in direction of Z
+- FrequencyBodyAccMagMean: Mean of body acceleration frequency magnitude
+- FrequencyBodyAccMagStd: Standard deviation of body acceleration frequency magnitude
+- FrequencyBodyAccMagMeanFreq: Mean of frequencies in body acceleration frequency magnitude
+- FrequencyBodyAccJerkMagMean: Mean of body acceleration jerk frequency magnitude
+- FrequencyBodyAccJerkMagStd: Standard Deviation of body acceleration jerk frequency magnitude
+- FrequencyBodyAccJerkMagMean: Mean of frequencies in body acceleration jerk frequency magnitude
+- FrequencyBodyGyroMagMean: Mean of gyroscopic frequency magnitude
+- FrequencyBodyGyroMagStd: Standard Deviation of gyroscopic frequency magnitude
+- FrequencyBodyGyroMagMeanFreq: Mean of frequencies found in gyroscopic frequency magnitude
+- FrequencyBodyGyroJerkMagMean: Mean of gyroscopic jerk frequency magnitude
+- FrequencyBodyGyroJerkMagStd: Standard Deviation of frequencies found in gyroscopic jerk frequency magnitude
+- FrequencyBodyGyroJerkMagMeanFreq: Mean of frequencies found in gyroscopic jerk frequency magnitude

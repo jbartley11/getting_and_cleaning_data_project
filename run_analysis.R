@@ -1,5 +1,5 @@
 # run_analysis.R
-# create a tidy dataset from accelerometers inside the Galaxy S
+# create a tidy dataset using accelerometer data from Galaxy S
 
 # load dplyr
 library(dplyr)
