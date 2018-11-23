@@ -1,4 +1,5 @@
-# description
+# run_analysis.R
+# create a tidy dataset from accelerometers inside the Galaxy S
 
 # load dplyr
 library(dplyr)
